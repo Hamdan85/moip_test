@@ -1,3 +1,4 @@
+require './spec/spec_helper'
 require './bin/lib/log_entry'
 
 RSpec.describe LogEntry do

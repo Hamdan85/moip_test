@@ -1,3 +1,4 @@
+require './spec/spec_helper'
 require './bin/lib/log_parser'
 
 RSpec.describe LogParser do
