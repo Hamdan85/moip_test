@@ -13,8 +13,9 @@ You can use it with their classes or through a command line:
 
 ```ruby
 require './bin/lib/log_parser'
-file_path = 'example/path/to/log_file.txt'
-log_parser = LogParser.new(file_path)
+file_path   = 'example/path/to/log_file.txt'
+file        = File.open(file_path, 'r')
+log_parser  = LogParser.new(file)
 ```
 So you can get the analysis through methods:
 

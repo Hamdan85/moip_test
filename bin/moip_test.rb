@@ -2,7 +2,9 @@ require_relative 'lib/log_parser'
 
 file_path = ARGV.first
 
-log_parser = LogParser.new(file_path)
+file = File.open(file_path, 'r')
+
+log_parser = LogParser.new(file)
 
 log_parser.most_accessed
 

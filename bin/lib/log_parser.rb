@@ -5,8 +5,8 @@ class LogParser
 
   attr_accessor :entries
 
-  def initialize(file_path)
-    file        = File.readlines(file_path)
+  def initialize(file)
+    file        = file.readlines
     @entries    = []
 
     create_entries(file)
